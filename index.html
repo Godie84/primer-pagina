@@ -12,13 +12,22 @@
 <body>
     <!-- Contenedor del encabezado principal del sitio -->
     <header>
-        <h1>Bienvenido a mi sitio web</h1> <!-- Título principal del sitio web -->
+        <div class="logo-container">
+            <img src="./img/logo.jpg" alt="Logo" class="logo">
+            <h1>Bienvenido a mi sitio web</h1> <!-- Título principal del sitio web -->
+        </div> 
         <nav>
             <!-- Contenedor del menú de navegación -->
-            <ul>
+            <ul class="menu">
                 <li><a href="#inicio">Inicio</a></li> <!-- Enlace a la sección de inicio -->
                 <li><a href="#acerca">Acerca de</a></li> <!-- Enlace a la sección acerca de -->
-                <li><a href="#servicios">Servicios</a></li> <!-- Enlace a la sección de servicios -->
+                <li class="submenu">
+                    <a href="#servicios">Servicios ▾</a> <!-- Enlace principal con indicador de submenú -->
+                    <ul class="submenu-items">
+                        <li><a href="#servicio1">Servicio 1</a></li>
+                        <li><a href="#servicio2">Servicio 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contacto">Contacto</a></li> <!-- Enlace a la sección de contacto -->
             </ul>
         </nav>
