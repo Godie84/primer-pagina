@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* 
@@ -389,6 +389,48 @@ button {
 
 button:hover {
     background-color: #005bb5;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.select {
+    position: relative;
+    width: 200px; /* Ancho del contenedor */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.animated-button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    animation: changeColor 1s forwards;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: green;
+    }
 }
 
 
